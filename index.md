@@ -1,6 +1,6 @@
 # Elixpy: Elixir for Python
 
-Elixpy is an implementation of [Elixir's](elixir-lang.org) standard library. Elixir is a functional, concurrent programming language. However, I find that Python has a better ecosystem. I tried to merge the best of both worlds by writing elixpy. Note that all of these functions may not be optimal or fast and that you use it at your own risk.
+Elixpy is an implementation of [Elixir's](elixir-lang.org) standard library. Elixir is a functional, concurrent programming language. However, I find that Python has a better ecosystem. I tried to merge the best of both worlds by writing elixpy. Note that all of these functions may not be optimal or fast and that you use it at your own risk. I have also written my own functions; that is, not all functions in Elixpy are from Elixir. 
 
 ## Installation
 
