@@ -4,7 +4,7 @@ This section contains many decorators and functions which take other functions a
 
 ## Protocol
 
-    `@protocol(*functions)`
+`@protocol(*functions)`
  
 `protocol` allows you to overload functions based on type and number of arguments. For example,
 let us define an add function which can add integers or strings:
@@ -41,7 +41,7 @@ In order for `func.protocol` to work, the functions must have _annotations_. Not
 
 ## Guard
 
-    `@func.guard(condition, default=None)`
+`@func.guard(condition, default=None)`
     
 This decorator allows you to impose a guard condition. The condition function takes the arguments given to the function and returns a boolean. If the condition returns `True`, it calls the function which was decorated. Otherwise, it returns the default.
 
@@ -67,13 +67,15 @@ The decorated function has the attribute `guardcon` which returns the condition.
 
 ## Compose
 
-Implementation is not yet robust.
+Implementation is not yet robust. Please do not use it.
 
 ## Argoverload
 
+Overload functions based on argument number.
+
 ## Memoize
 
-    `func.memoize(size = 1000)`
+`func.memoize(size = 1000)`
     
 A simple memoizer. Memoization is a common optimization which works by storing previously called function calls. This is very helpful on tree recursive or even just normal recursive functions. On my computer, when `purefib` and `fastfib` is implemented like so,
 
@@ -92,10 +94,10 @@ def fastfib(n):
         return fastfib(n - 1) + fastfib(n - 2)
 ```
 
-`purefib(40)` takes 98.5749020576477 seconds to complete while `fastfib(40)` takes 9.989738464355469e-05 seconds to complete.
+`purefib(40)` takes `98.5749020576477` seconds to complete while `fastfib(40)` takes `9.989738464355469e-05` seconds to complete.
 
 ## Match
 
-    `func.match(tree, value)`
+`func.match(tree, value)`
     
 Sometimes, you know what you want from a data structure but it's hard to do it. That is what pattern matching is for. 

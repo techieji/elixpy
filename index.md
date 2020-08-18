@@ -8,4 +8,4 @@ Elixpy is available on PyPI: `pip install elixpy` should install it. If, for som
 
 ## Docs
 
-The docs are located [here](docs.md)
+The docs are located [here](docs.md).
